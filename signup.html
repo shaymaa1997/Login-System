@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="smart login system using crud ">
+    <meta name="keywords" content="html,css,bootstrap,js,crud">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <section id="home" class="vh-100  d-flex  align-items-center">
+        <div class="container  d-flex justify-content-center align-items-center  my-5">
+            <div class="row w-100 px-5">
+                <div class="col-12 py-5 px-5">
+                    <div class="item text-center ">
+                        <h1 class="text-info">smart login system</h1>
+                        <div class="form-group py-2">
+                          
+                                <input type="text" placeholder="Enter your name" id="user-name"
+                                    class="form-control my-2 text-white" autocomplete="off">
+                                <div id="userNameAlert" class="alert alert-danger pb-0 pt-3 d-none font">
+                                    <p>include at least 3 letters starting with capital, second name is obtional</p>
+                                </div>
+                                <input type="email" placeholder="Enter your email" id="user-email"
+                                    class="form-control my-2 text-white" autocomplete="off">
+                                <div id="userEmailAlert" class="alert alert-danger pb-0 pt-3 d-none font">
+                                    <p>ex:name@example.com</p>
+                                </div>
+                                <input type="password" placeholder="Enter your password" id="user-password"
+                                    class="form-control my-2 text-white">
+                                <div id="userPasswordAlert" class="alert alert-danger pb-0 pt-3 d-none font">
+                                    <p>you must strenth your password, from 5 to 15 characters</p>
+                                </div>
+                        
+                        </div>
+                        <div class="msgs text-center">
+                            <p class="text-success d-none" id="confirmMsg">Success</p>
+                            <p class="text-danger d-none" id="accountExistMsg">this account is exist ! Try another one.
+                            </p>
+                            <p class="text-danger d-none" id="tryAgainMsg">signUp failed ! Try again</p>
+                        </div>
+                        <a onclick="signup()" id="signupBtn"
+                            class="form-control mb-3 btn btn-info login bg-transparent ">Sign Up</a>
+                        <p> You have an acount? <a href="index.html" class="signup"> Sign In </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
